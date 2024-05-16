@@ -1,0 +1,122 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('assets/fondiu.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+}
+
+
+#fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 4s ease;
+}
+
+.todo {
+    position: relative;
+}
+
+.velo {
+    background: rgb(255,255,255);
+background: radial-gradient(circle, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 100%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 2.5em;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content-text {
+    margin: 50px 0;
+}
+
+.parallax {
+    position: absolute; /* Cambiado a posición absoluta */
+    width: 100%; /* Ancho completo */
+    height: auto; /* Altura automática */
+}
+
+.parallax1 {
+    top: 0; /* Ajusta la posición de la primera imagen paralaje */
+    left: 0;
+    z-index: -1; /* Asegura que esté detrás del contenido */
+    animation: parallax1 10s infinite alternate; /* Animación de paralaje */
+}
+
+.parallax2 {
+    top: 50%; /* Ajusta la posición de la segunda imagen paralaje */
+    right: 0;
+    z-index: -2; /* Asegura que esté detrás del contenido */
+    animation: parallax2 20s infinite alternate; /* Animación de paralaje */
+}
+
+/* Animaciones de paralaje */
+@keyframes parallax1 {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-20%);
+    }
+}
+
+@keyframes parallax2 {
+    0% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-40%);
+    }
+}
+
+/* Estilos específicos para móviles */
+@media only screen and (max-width: 768px) {
+    .hero {
+        background-position: center center;
+        background-size: cover;
+    }
+
+    .hero-text h1 {
+        font-size: 2em;
+    }
+}
+
+.mxwp-400 {
+    max-width: 400px;
+}
+
+.img1 {
+    width: 400px;
+}
