@@ -15,6 +15,10 @@
 
 <body>
     <div class="container">
+        <audio controls autoplay>
+            <source src="/cancion.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
         <div class="imagen">
             <img src="assets/fondiu.jpg" class="img-fondiu">
         </div>
@@ -74,6 +78,9 @@
 
                 <span>Tenemos el placer de presentarle a las siguientes especialistas que estarán disponibles para
                     brindarle recomendaciones personalizadas:</span>
+                
+                <h5>Quiropráctica especialista en zonas erógenas</h5>
+                <h5>Doctora experta en felaciones</h5>
             </span>
         </div>
         <div class="texto">
@@ -114,9 +121,34 @@
                 Que no se olvide quién es la jefa <br><br>
                  cualquier consulta o sugerencia no se olvide de contactar a la secretaria para tomar una hora muchas gracias.</span>
         </div>
+        <div class="texto">
+            <div class="content-hoja">
+                <img src="/assets/hojarriba.png" class="hoja">
+            </div>
+            <h3>Quiropráctica especialista en zonas erógenas</h3>
+            <span>Llegó tarde y no te avisó? No contesta su teléfono? No llega todos los días con comida? Entonces AZOTALO MAS FUERTE.
+                Según los estudios de Hannah Montana es indispensable los castigos en una pareja, sirven para corregir conductas no deseadas, para descargar ira y para marcarlo como tuyo.<br><br>
+                Cómo y cuándo se hace esto debe ser tomado con cautela debe ser en un momento que el menos se lo espera lo tomas por la espalda y comienzas a dar a  latigazos siempre tienen que ir acompañado de alguna frase por ejemplo por qué no sacaste la basura porque no llegaste con chocolates por qué no me dijiste buenos días y así.<br><br>
+                Como doctora reconocida el Harvard te recomiendo que utilices látigos esposas cuerdas y martillos.<br><br>
+                Que no se olvide quién es la jefa <br><br>
+                 cualquier consulta o sugerencia no se olvide de contactar a la secretaria para tomar una hora muchas gracias.</span>
+        </div>
     </div>
 
+    <script>
+        // Espera a que la página esté completamente cargada
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('miAudio');
 
+            // Establecer el volumen inicial al 80%
+            audio.volume = 0.8;
+
+            // Cambiar el volumen al 30% después de 5 segundos
+            setTimeout(function() {
+                audio.volume = 0.3;
+            }, 5000);
+        });
+    </script>
     <script src="/javascript.js"></script>
     <script src="/volume-control.js"></script>
 </body>
